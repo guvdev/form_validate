@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+  <title>Form Validation</title>
+</head>
+<body style="font-family: 'Ubuntu', sans-serif;">
+    <div id="divbg" class="bg-blue-300 min-h-screen flex flex-col justify-center items-center p-4 transition duration-500">
+        <form id="my_form" class="bg-white p-6 rounded-4xl shadow-md flex flex-col gap-2 w-full max-w-md">
+
+            <h1 class="font-bold text-blue-400 items-center text-center text-2xl my-4 transition duration-500">Study Form</h1>
+            <div class="flex flex-col gap-4 my-4">
+                <label class="font-medium text-sm" for="name"><i class="fa-regular fa-user text-blue-400 mx-2"></i>Name</label>
+                <input placeholder="Enter your name" type="text" id="name" name="name" class="bg-gray-100 p-4 border border-transparent outline-none ring-0 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-offset-0 transition duration-200 ease-in-out rounded-2xl w-full decoration-none">
+                <span id="erro-name" class="text-red-500 text-sm"></span>
+
+                <label class="font-medium text-sm" for="email"><i class="fa-regular fa-envelope text-blue-400 mx-2"></i>Email</label>
+                <input placeholder="Enter your email" type="text" id="email" name="email" class="bg-gray-100 p-4 border border-transparent outline-none ring-0 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-offset-0 transition duration-200 ease-in-out rounded-2xl w-full decoration-none">
+                <span id="erro-email" class="text-red-500 text-sm"></span>
+
+                <label class="font-medium text-sm" for="phone"><i class="fa-solid fa-phone text-blue-400 mx-2"></i>Phone number</label>
+                <input placeholder="Enter your phone number" type="text" id="phone" name="phone" class="bg-gray-100 p-4 border border-transparent outline-none ring-0 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 focus:ring-offset-0 transition duration-200 ease-in-out rounded-2xl w-full decoration-none">
+                <span id="erro-phone" class="text-red-500 text-sm"></span>
+            </div>
+            <input id="btnsub" type="submit" value="Submit" class="p-4 mb-4 bg-blue-400 text-white font-medium rounded-2xl shadow-md hover:bg-blue-700 cursor-pointer transition duration-500 ease-in-out">
+        </form>
+    </div>
+<script src="validate.js"></script>
+</body>
+</html>
